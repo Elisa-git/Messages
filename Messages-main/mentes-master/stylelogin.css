@@ -1,0 +1,86 @@
+.back {
+    height: 5px;
+    width: 100%;
+}
+
+form {
+    background-image: url("f.jpg");
+    background-color: #141414;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 64px;
+    border-radius: 10px;
+    margin: 80px auto;
+    margin-top: 80px;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+form fieldset  {
+    margin-top: 4vh;;
+    border: 0;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none;
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input:hover,
+form select:hover {
+    box-shadow: 5px 4px 3px rgb(77, 74, 74);
+    transition: 400ms;
+}
+
+form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: blackw;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form #botao {
+    width: 19vw;
+    height: 6vh;
+    border-radius: 3px;
+    border: 0;
+    margin-top: 40px;
+    margin-left: 4vw;
+
+    outline: none;
+
+    background-color: black;
+    transition: background-color 400ms;
+    color: white;
+
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form #botao:hover {
+    transition: 200ms;
+    background-color: white;
+    color: black;
+}
+
