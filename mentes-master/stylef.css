@@ -1,0 +1,155 @@
+.back {
+    height: 5px;
+    width: 100%;
+}
+
+
+form {
+    background-image: url("f.jpg");
+    background-color: #141414;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 64px; 
+    border-radius: 10px;
+    margin: 80px auto;   
+    margin-top: 80px;
+    max-width: 730px;
+    box-sizing: border-box;   
+}
+
+form h1 {
+    font-size: 36px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+
+    color: black
+}
+
+form .imgA {
+    margin-left: 15vw;
+    margin-top: 5vh;
+    border-radius: 50%;
+}
+
+form fieldset  {
+    margin-top: 4vh;;
+    border: 0;
+}
+
+form .field {
+    flex: 1;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 24px;
+}
+
+form .field-group {
+    display: flex;
+}
+
+form input,
+form select {
+    background-color: #f0f0f5;
+    border: 0;
+    padding: 16px 24px;
+    font-size: 16px;
+    outline: none; 
+    border-radius: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input:hover,
+form select:hover {
+    box-shadow: 5px 4px 3px rgb(77, 74, 74);
+    transition: 400ms;
+}
+
+form select { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: blackw;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+form .field-group .field + .field {  
+    margin-left: 24px;
+}
+
+form button {
+    width: 9vw;
+    height: 6vh;
+    border-radius: 8px;
+    border: 0;
+    margin-top: 40px;
+    margin-left: 18vw;
+
+    outline: none;
+
+    background-color: black;
+    transition: background-color 400ms;
+    color: white;
+
+    font-size: 17px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form button:hover {
+    transition: 200ms;
+    background-color: #141414;
+    color: white;
+}
+
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modalImg {
+    text-align: center;
+    margin-bottom: 2vh;
+  }

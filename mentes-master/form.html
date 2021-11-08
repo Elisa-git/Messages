@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirme seu Cadastro</title>
+
+    <link rel="stylesheet" href="pdefinition.css">
+    <link rel="stylesheet" href="stylef.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Messages</h1> 
+        <h3>Conversas</h3>
+        <h3>Agenda</h3>
+        <h3>Contatos</h3>
+        <a href="login.html"> <h3>Log In</h3> </a>
+        <a href="form.html"> <h3>Cadastre-se</h3> </a>
+    </header>
+    <main>
+        <div class="back"></div>
+        <form name="user">
+            <h1>Preencha seus dados</h1>
+            <img src="avt.png" alt="Avatar" class="imgA" style="width:30%">
+            <fieldset> 
+                <div class="field">
+                    <label form="email">E-mail</label> 
+                    <input type="email" name="email" placeholder="Digite seu E-mail" required>
+                </div>
+                <div class="field">
+                    <label form="name">Nome</label> 
+                    <input type="text" name="name" placeholder="Digite seu nome completo" required>
+                </div>
+                <div class="field-group">
+                    <div class="field">
+                        <label form="username">User name</label>
+                        <input type="text" name="username" placeholder="Digite seu nome de usuário" required>
+                    </div>
+                    <div class="field">
+                        <label form="password">Senha</label>
+                        <input type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+                <button id="myBtn" type="submit">Cadastrar</button>
+
+                <!-- Modal -->
+
+                <div id="myModal" class="modal">
+
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <div class="modalImg">
+                        <img src="check.png" alt="Confirmado" style="width:10%">
+                      </div>
+                      <p style="text-align: center;">Cadastro realizado com sucesso! Volte a tela inicial e faça log in para trocar mensagens.</p>
+                    </div>
+                  
+                </div>
+                
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModal");
+
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtn");
+
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("close")[0];
+
+                    // When the user clicks on the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    }
+
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                    modal.style.display = "none";
+                    }
+
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                </script>
+            </fieldset>
+        </form>
+        <div class="back"></div>
+    </main>    
+    <footer>
+        <p> &copy; Elisa Mesquita</p>
+    </footer>
+</body>
